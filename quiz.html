@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <title>Quiz</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/breadcrumb.css">
+	<link rel="stylesheet" href="css/recipe.css">
+	<link rel="stylesheet" href="css/quiz.css">
+	<link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="js/quiz.js"></script>
+	<script src="https://kit.fontawesome.com/248f874c8f.js" crossorigin="anonymous"></script>
+</head>
+	<header>
+		<div class="logo">
+		   <a href="index.html" class="logo-link"><img src="images/logo.png" alt="Logo"></a>
+		</div>
+		<ul class="navigation">
+		   <li><a href="index.html">Home</a></li>
+		   <li><a href="about.html">About Us</a></li>
+		   <li class="dropdown">
+		   		<a href="javascript:void(0)" class="dropbtn">Recipes</a>
+				<div class="drop-options">
+					<a href="genres.html">By Genre</a>
+					<a href="artist.html">By Artist</a>
+					<a href="song.html">By Song</a>
+				</div>	
+		   </li>
+		   <li class="dropdown">
+		   		<a href="javascript:void(0)" class="dropbtn">Playlists</a>
+				<div class="drop-options">
+					<a href="cuisine.html">By Cuisine</a>
+					<a href="mood.html">By Mood</a>
+				</div>
+			</li>
+		   <li><a href="articles.html">Related Articles</a></li>
+		   <li><a href="quiz.html">Quiz</a></li>
+	 		<div class="header-right">
+	 			<form action="#" method="get">
+	 				<input type="text" name="search" placeholder="Search...">
+	 				<button type="submit">GO</button>
+	 			</form>
+	 		</div>
+		</ul>
+	</header>
+<body>
+  <div id="quiz-container">
+    <h1>QUIZ</h1>
+    <p>Question 1: Which legendary guitarist is known for playing a Fender Stratocaster?</p>
+    <input type="radio" name="q1" value="a"> a) Jimi Hendrix<br>
+    <input type="radio" name="q1" value="b"> b) Jimmy Page<br>
+    <input type="radio" name="q1" value="c"> c) Eddie Van Halen<br>
+    
+    <p>Question 2: Who is often called the "Queen of Pop"?</p>
+    <input type="radio" name="q2" value="a"> a) Madonna<br>
+    <input type="radio" name="q2" value="b"> b) Lady Gaga<br>
+    <input type="radio" name="q2" value="c"> c) Beyonce<br>
+    
+    <p>Question 3: Which classic rock band had a hit with the song "Stairway to Heaven"?</p>
+    <input type="radio" name="q3" value="a"> a) The Beatles<br>
+    <input type="radio" name="q3" value="b"> b) Led Zeppelin<br>
+    <input type="radio" name="q3" value="c"> c) The Rolling Stones<br>
+	
+    <p>Question 4: Who wrote the song "Purple Rain"?</p>
+    <input type="radio" name="q4" value="a"> a) Prince<br>
+    <input type="radio" name="q4" value="b"> b) Michael Jackson<br>
+    <input type="radio" name="q4" value="c"> c) Bruce Springsteen<br>
+	
+    <p>Question 5: What genre of music is famous in New Orleans and is often associated with brass instruments?</p>
+    <input type="radio" name="q5" value="a"> a) Jazz<br>
+    <input type="radio" name="q5" value="b"> b) Blues<br>
+    <input type="radio" name="q5" value="c"> c) Reggae<br>
+	
+    <p>Question 6: Who is the lead singer of the band Coldplay?</p>
+    <input type="radio" name="q6" value="a"> a) Chris Martin<br>
+    <input type="radio" name="q6" value="b"> b) Bono<br>
+    <input type="radio" name="q6" value="c"> c) Dave Grohl<br>
+	
+    <p>Question 7: What 80s pop star had a hit with the song "Girls Just Want to Have Fun"?</p>
+    <input type="radio" name="q7" value="a"> a) Cyndi Lauper<br>
+    <input type="radio" name="q7" value="b"> b) Madonna<br>
+    <input type="radio" name="q7" value="c"> c) Janet Jackson<br>
+	
+    <p>Question 8: What legendary singer is known as the "King of Rock and Roll"?</p>
+    <input type="radio" name="q8" value="a"> a) Elvis Presley<br>
+    <input type="radio" name="q8" value="b"> b) Chuck Berry<br>
+    <input type="radio" name="q8" value="c"> c) Little Richard<br>
+	
+    <p>Question 9: Who is the lead singer of the band U2?</p>
+    <input type="radio" name="q9" value="a"> a) Bono<br>
+    <input type="radio" name="q9" value="b"> b) Chris Martin<br>
+    <input type="radio" name="q9" value="c"> c) Dave Grohl<br>
+	
+    <p>Question 10: What famous composer is known for his classical music pieces, such as "Fur Elise" and "Moonlight Sonata"?</p>
+    <input type="radio" name="q10" value="a"> a) Wolfgang Amadeus Mozart<br>
+    <input type="radio" name="q10" value="b"> b) Ludwig van Beethoven<br>
+    <input type="radio" name="q10" value="c"> c) Johann Sebastian Bach<br><br>
+    
+    <button class="button" onclick="submitQuiz()">Submit</button>
+  </div>
+  </body>
+<footer>
+	 <div class="footer-left">
+	   © 2022 Your Company. All rights reserved. 
+	   <a href="privacy.html">Terms of Service</a> • <a href="privacy.html">Privacy Policy</a>
+	 </div>
+	 <div class="footer-right">
+	   <div class="footer-column">
+	     <h5>Site Map</h5>
+	     <ul>
+	       <li><a href="index.html">Home</a></li>
+		   <li><a href="about.html">About Us</a></li>
+		   <li class="dropdown">
+		   		<a href="javascript:void(0)" class="dropbtn">Recipes</a>
+				<div class="drop-options">
+					<a href="genre.html">By Genre</a>
+					<a href="artist.html">By Artist</a>
+					<a href="song.html">By Song</a>
+				</div>	
+		   </li>
+		   <li class="dropdown">
+		   		<a href="javascript:void(0)" class="dropbtn">Playlists</a>
+				<div class="drop-options">
+					<a href="cuisine.html">By Cuisine</a>
+					<a href="mood.html">By Mood</a>
+				</div>
+			</li>
+	       <li><a href="articles.html">Related Articles</a></li>
+	       <li><a href="quiz.html">Quiz</a></li>
+	     </ul>
+	   </div>
+	  <div class="footer-column">
+	    <h5>Socials</h5>
+	     <ul>
+	       <li><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i> Twitter</a></li>
+	       <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a></li>
+	       <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i> Facebook</a></li>
+	     </ul>
+	  </div>
+	   <div class="footer-column">
+	     <h4>@FoodieBops</h4>
+	      <p>A food blog with tasty recipes and helpful tips for home cooks.</p>
+	   </div>
+	  </div>
+</footer>
+</html>
